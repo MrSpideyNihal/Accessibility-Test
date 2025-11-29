@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Helper</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <header>
+            <h1>♿ Accessibility Helper</h1>
+            <p class="subtitle">Tools for easier web navigation</p>
+        </header>
+
+        <section class="controls">
+            <div class="control-group">
+                <h2>Text Size</h2>
+                <div class="button-row">
+                    <button id="decreaseText" class="btn btn-secondary" title="Decrease text size">
+                        <span class="icon">-</span> Smaller
+                    </button>
+                    <button id="resetText" class="btn btn-info" title="Reset to default">
+                        <span class="icon">↻</span> Reset
+                    </button>
+                    <button id="increaseText" class="btn btn-secondary" title="Increase text size">
+                        <span class="icon">+</span> Larger
+                    </button>
+                </div>
+                <div class="current-size">Current: <span id="currentSize">100%</span></div>
+            </div>
+
+            <div class="control-group">
+                <h2>Color Themes</h2>
+                <div class="button-row">
+                    <button id="normalTheme" class="btn btn-theme">Normal</button>
+                    <button id="darkMode" class="btn btn-theme btn-dark">Dark</button>
+                </div>
+                <div class="button-row">
+                    <button id="highContrast" class="btn btn-theme btn-contrast">High Contrast</button>
+                    <button id="yellowBlack" class="btn btn-theme btn-yellow">Yellow/Black</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h2>Reading Aids</h2>
+                <div class="toggle-row">
+                    <label class="toggle-label">
+                        <input type="checkbox" id="toggleLineHeight">
+                        <span>Increased Line Spacing</span>
+                    </label>
+                </div>
+                <div class="toggle-row">
+                    <label class="toggle-label">
+                        <input type="checkbox" id="toggleLetterSpacing">
+                        <span>Increased Letter Spacing</span>
+                    </label>
+                </div>
+                <div class="toggle-row">
+                    <label class="toggle-label">
+                        <input type="checkbox" id="toggleReadingGuide">
+                        <span>Reading Guide (Ruler)</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h2>Focus & Navigation</h2>
+                <div class="toggle-row">
+                    <label class="toggle-label">
+                        <input type="checkbox" id="toggleFocusHighlight">
+                        <span>Enhanced Focus Highlight</span>
+                    </label>
+                </div>
+                <div class="toggle-row">
+                    <label class="toggle-label">
+                        <input type="checkbox" id="toggleCursorSize">
+                        <span>Large Cursor</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <button id="resetAll" class="btn btn-danger btn-full">Reset All Settings</button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="shortcuts-section">
+                <h3>Keyboard Shortcuts</h3>
+                <ul>
+                    <li><kbd>Ctrl+Shift++</kbd> Increase text</li>
+                    <li><kbd>Ctrl+Shift+-</kbd> Decrease text</li>
+                    <li><kbd>Ctrl+Shift+H</kbd> High contrast</li>
+                </ul>
+            </div>
+            <p class="footer-credit">Made by Nihal</p>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
